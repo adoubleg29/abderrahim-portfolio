@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abderrahim Aggoun | Portfolio — Cybersécurité, Informatique & Startup</title>
+  <meta name="description" content="Portfolio professionnel d'Abderrahim Aggoun : informatique, cybersécurité, génie électrique, startup, innovation et projets." />
+  <meta name="author" content="Abderrahim Aggoun" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div id="loader"><div class="loader-mark">AA</div></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark">AA</span>
+        <span>Abderrahim Aggoun</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about"        data-fr="Profil"       data-en="Profile">Profil</a></li>
+        <li><a href="#education"    data-fr="Formation"    data-en="Education">Formation</a></li>
+        <li><a href="#achievements" data-fr="Réalisations" data-en="Achievements">Réalisations</a></li>
+        <li><a href="#projects"     data-fr="Projets"      data-en="Projects">Projets</a></li>
+        <li><a href="#services"     data-fr="Services"     data-en="Services">Services</a></li>
+        <li><a href="#media"        data-fr="Médias"       data-en="Media">Médias</a></li>
+        <li><a href="#contact" class="nav-cta" data-fr="Contact" data-en="Contact">Contact</a></li>
+      </ul>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-opt" id="langFR">FR</span>
+        <span class="lang-sep">|</span>
+        <span class="lang-opt" id="langEN">EN</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero container" id="home">
+    <div class="hero-grid">
+      <div class="hero-card glass reveal">
+        <div class="availability">
+          <span class="live-dot"></span>
+          <span data-fr="Disponible pour emploi, stage, collaboration &amp; projets technologiques"
+                data-en="Available for employment, internship, collaboration &amp; tech projects">Disponible pour emploi, stage, collaboration &amp; projets technologiques</span>
+        </div>
+
+        <h1>Abderrahim<br><span class="gradient-text">Aggoun</span></h1>
+
+        <p class="hero-lead"
+           data-fr-html='Profil multidisciplinaire en <strong>informatique</strong>, <strong>cybersécurité</strong>, <strong>génie électrique</strong> et <strong>entrepreneuriat technologique</strong>. Je construis une carrière ambitieuse autour de la sécurité des systèmes, des solutions numériques, de l&apos;innovation et de l&apos;impact réel.'
+           data-en-html='Multidisciplinary profile in <strong>computer science</strong>, <strong>cybersecurity</strong>, <strong>electrical engineering</strong> and <strong>tech entrepreneurship</strong>. Building an ambitious career around systems security, digital solutions, innovation and real-world impact.'>
+          Profil multidisciplinaire en <strong>informatique</strong>, <strong>cybersécurité</strong>,
+          <strong>génie électrique</strong> et <strong>entrepreneuriat technologique</strong>.
+          Je construis une carrière ambitieuse autour de la sécurité des systèmes, des solutions numériques,
+          de l'innovation et de l'impact réel.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects"><i class="fa-solid fa-rocket"></i> <span data-fr="Voir mes projets" data-en="View my projects">Voir mes projets</span></a>
+          <a class="btn btn-secondary" href="assets/cv/CV_Aggoun_FR_v2.pdf" target="_blank"><i class="fa-solid fa-file-arrow-down"></i> CV FR</a>
+          <a class="btn btn-secondary" href="assets/cv/CV_Aggoun_EN_v2.pdf" target="_blank"><i class="fa-solid fa-file-arrow-down"></i> CV EN</a>
+          <a class="btn btn-secondary" href="#contact"><i class="fa-solid fa-paper-plane"></i> <span data-fr="Me contacter" data-en="Contact me">Me contacter</span></a>
+        </div>
+
+        <div class="mini-tags">
+          <span class="mini-tag" data-fr="Cybersécurité"     data-en="Cybersecurity">Cybersécurité</span>
+          <span class="mini-tag" data-fr="Informatique"      data-en="Computer Science">Informatique</span>
+          <span class="mini-tag" data-fr="Génie électrique"  data-en="Electrical Engineering">Génie électrique</span>
+          <span class="mini-tag">Startup</span>
+          <span class="mini-tag">Français C1</span>
+          <span class="mini-tag">Anglais B2</span>
+          <span class="mini-tag">Arabe C2</span>
+        </div>
+      </div>
+
+      <aside class="profile-panel glass reveal">
+        <div class="photo-area">
+          <img src="images/abderrahim.png" alt="Abderrahim Aggoun" class="profile-photo">
+          <div class="floating-card one">
+            <div class="float-label" data-fr="Localisation" data-en="Location">Localisation</div>
+            <div class="float-value">Gatineau, QC 🇨🇦</div>
+          </div>
+          <div class="floating-card two">
+            <div class="float-label" data-fr="Positionnement" data-en="Focus">Positionnement</div>
+            <div class="float-value">Tech · Cyber · Startup</div>
+          </div>
+          <div class="floating-card three">
+            <div class="float-label" data-fr="Langues" data-en="Languages">Langues</div>
+            <div class="float-value">FR C1 · EN B2 · AR C2</div>
+          </div>
+        </div>
+        <div class="profile-bottom">
+          <h3 data-fr="Diplômé &amp; entrepreneur en construction" data-en="Graduate &amp; entrepreneur in the making">Diplômé &amp; entrepreneur en construction</h3>
+          <p data-fr="Un parcours entre l'Algérie et le Canada, avec une vision claire : transformer les compétences techniques en projets réels."
+             data-en="A journey between Algeria and Canada, with a clear vision: turning technical skills into real-world projects.">Un parcours entre l'Algérie et le Canada, avec une vision claire : transformer les compétences techniques en projets réels.</p>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span data-fr="Cybersécurité"         data-en="Cybersecurity">Cybersécurité</span>
+      <span data-fr="Développement logiciel" data-en="Software Development">Développement logiciel</span>
+      <span data-fr="Réseaux"               data-en="Networks">Réseaux</span>
+      <span>Startup</span>
+      <span data-fr="Génie électrique"      data-en="Electrical Engineering">Génie électrique</span>
+      <span>Innovation</span>
+      <span data-fr="Leadership académique"  data-en="Academic Leadership">Leadership académique</span>
+      <span data-fr="Projet de fin d'études" data-en="Final Year Project">Projet de fin d'études</span>
+      <span data-fr="Cybersécurité"         data-en="Cybersecurity">Cybersécurité</span>
+      <span data-fr="Développement logiciel" data-en="Software Development">Développement logiciel</span>
+      <span data-fr="Réseaux"               data-en="Networks">Réseaux</span>
+      <span>Startup</span>
+      <span data-fr="Génie électrique"      data-en="Electrical Engineering">Génie électrique</span>
+      <span>Innovation</span>
+      <span data-fr="Leadership académique"  data-en="Academic Leadership">Leadership académique</span>
+      <span data-fr="Projet de fin d'études" data-en="Final Year Project">Projet de fin d'études</span>
+    </div>
+  </div>
+
+  <!-- Achievements -->
+  <section class="section container" id="achievements">
+    <div class="eyebrow reveal" data-fr="Réalisations clés" data-en="Key Achievements">Réalisations clés</div>
+    <h2 class="section-title reveal"
+        data-fr-html='Une trajectoire orientée <span>excellence</span>'
+        data-en-html='A trajectory built on <span>excellence</span>'>Une trajectoire orientée <span>excellence</span></h2>
+    <p class="section-subtitle reveal"
+       data-fr="Les points forts de mon parcours académique, entrepreneurial et professionnel."
+       data-en="Key highlights from my academic, entrepreneurial and professional journey.">
+      Les points forts de mon parcours académique, entrepreneurial et professionnel.
+    </p>
+
+    <div class="grid-4" style="margin-top:42px;">
+      <div class="stat-card glass reveal">
+        <div class="stat-number">1er</div>
+        <div class="stat-label" data-fr="Major de promotion — Université 8 Mai 1945, Guelma" data-en="Valedictorian — Université 8 Mai 1945, Guelma">Major de promotion — Université 8 Mai 1945, Guelma</div>
+      </div>
+      <div class="stat-card glass reveal">
+        <div class="stat-number">100%</div>
+        <div class="stat-label" data-fr="Note complète au projet de fin d'études — Algérie" data-en="Perfect score on the final-year project — Algeria">Note complète au projet de fin d'études — Algérie</div>
+      </div>
+      <div class="stat-card glass reveal">
+        <div class="stat-number">3e</div>
+        <div class="stat-label" data-fr="Classement national — startup ADADI, Algérie" data-en="National ranking — ADADI startup, Algeria">Classement national — startup ADADI, Algérie</div>
+      </div>
+      <div class="stat-card glass reveal">
+        <div class="stat-number">C1</div>
+        <div class="stat-label" data-fr="Français avancé · anglais B2 · arabe C2" data-en="Advanced French · English B2 · Arabic C2">Français avancé · anglais B2 · arabe C2</div>
+      </div>
+    </div>
+    <div class="stat-card stat-card-gpa glass reveal">
+      <div class="stat-number">3.50<span class="stat-sup">+</span></div>
+      <div class="stat-label"
+           data-fr="Moyenne d'excellence sur 4.30 — Baccalauréat en informatique, cybersécurité (UQO)"
+           data-en="Excellence GPA out of 4.30 — B.Sc. Computer Science, Cybersecurity (UQO)">Moyenne d'excellence sur 4.30 — Baccalauréat en informatique, cybersécurité (UQO)</div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section container" id="about">
+    <div class="two-col">
+      <div class="rich-card glass reveal">
+        <div class="eyebrow" data-fr="Profil" data-en="Profile">Profil</div>
+        <h2 class="section-title"
+            data-fr-html='Je construis mon avenir avec <span>méthode</span>.'
+            data-en-html='Building my future with <span>purpose</span>.'>Je construis mon avenir avec <span>méthode</span>.</h2>
+        <p data-fr-html="Je suis un profil technique ambitieux, formé en <strong>informatique</strong>, <strong>cybersécurité</strong> et <strong>génie électrique</strong>. Mon parcours combine une base académique solide, une expérience entrepreneuriale récompensée au niveau national, et une volonté claire d'évoluer dans les domaines technologiques."
+           data-en-html="I am an ambitious technical profile, trained in <strong>computer science</strong>, <strong>cybersecurity</strong> and <strong>electrical engineering</strong>. My background combines a strong academic foundation, nationally recognised entrepreneurial experience, and a clear drive to grow in the technology sector.">
+          Je suis un profil technique ambitieux, formé en <strong>informatique</strong>,
+          <strong>cybersécurité</strong> et <strong>génie électrique</strong>. Mon parcours combine
+          une base académique solide, une expérience entrepreneuriale récompensée au niveau national,
+          et une volonté claire d'évoluer dans les domaines technologiques.
+        </p>
+        <p data-fr="Mon objectif n'est pas seulement d'obtenir un emploi, mais de construire une vraie identité professionnelle : compétences techniques, discipline, projets, réseau, portfolio et vision entrepreneuriale."
+           data-en="My goal is not just to find a job, but to build a real professional identity: technical skills, discipline, projects, network, portfolio and entrepreneurial vision.">
+          Mon objectif n'est pas seulement d'obtenir un emploi, mais de construire une vraie identité
+          professionnelle : compétences techniques, discipline, projets, réseau, portfolio et vision entrepreneuriale.
+        </p>
+        <div class="quote"
+             data-fr='"Je ne cherche pas seulement à réussir. Je construis chaque jour la personne capable de réussir."'
+             data-en='"I am not just chasing success. I am daily building the person capable of achieving it."'>
+          "Je ne cherche pas seulement à réussir. Je construis chaque jour la personne capable de réussir."
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item glass reveal">
+          <div class="item-top">
+            <div class="item-title" data-fr="Startup ADADI — fondée à 21 ans" data-en="ADADI Startup — founded at 21">Startup ADADI — fondée à 21 ans</div>
+            <div class="item-date">2022 · Guelma</div>
+          </div>
+          <div class="item-org" data-fr="Innovation technologique — Algérie" data-en="Technological innovation — Algeria">Innovation technologique — Algérie</div>
+          <p class="item-desc"
+             data-fr="Système intelligent de surveillance de la consommation d'énergie. Classé 3e au niveau national, 1er dans la wilaya. Récompensé par le Wali, l'APW, le Médiateur de la République et le Recteur de l'université."
+             data-en="Intelligent energy consumption monitoring system. Ranked 3rd nationally, 1st in the wilaya. Awarded by the Wali, the APW, the Mediator of the Republic and the University Rector.">
+            Système intelligent de surveillance de la consommation d'énergie. Classé 3e au niveau national,
+            1er dans la wilaya. Récompensé par le Wali, l'APW, le Médiateur de la République et le Recteur de l'université.
+          </p>
+        </div>
+
+        <div class="timeline-item glass reveal">
+          <div class="item-top">
+            <div class="item-title" data-fr="Double formation universitaire" data-en="Dual university background">Double formation universitaire</div>
+            <div class="item-date">2019 – 2025</div>
+          </div>
+          <div class="item-org" data-fr="Guelma (Algérie) &amp; Gatineau (Canada)" data-en="Guelma (Algeria) &amp; Gatineau (Canada)">Guelma (Algérie) &amp; Gatineau (Canada)</div>
+          <p class="item-desc"
+             data-fr="Licence en génie électrique (Algérie), major de promotion — et Baccalauréat en informatique, cybersécurité (UQO, Canada) avec une moyenne d'excellence de 3.50 / 4.30."
+             data-en="Bachelor's in electrical engineering (Algeria), valedictorian — and B.Sc. in computer science, cybersecurity (UQO, Canada) with an excellence GPA of 3.50 / 4.30.">
+            Licence en génie électrique (Algérie), major de promotion — et Baccalauréat en informatique,
+            cybersécurité (UQO, Canada) avec une moyenne d'excellence de 3.50 / 4.30.
+          </p>
+        </div>
+
+        <div class="timeline-item glass reveal">
+          <div class="item-top">
+            <div class="item-title" data-fr="Profil multilingue &amp; international" data-en="Multilingual &amp; international profile">Profil multilingue &amp; international</div>
+            <div class="item-date">FR · EN · AR</div>
+          </div>
+          <div class="item-org" data-fr="Algérie → Canada" data-en="Algeria → Canada">Algérie → Canada</div>
+          <p class="item-desc"
+             data-fr="Français C1, anglais B2, arabe C2. Capacité à travailler dans des environnements multiculturels, à présenter des projets et à collaborer avec des équipes internationales."
+             data-en="French C1, English B2, Arabic C2. Ability to work in multicultural environments, present projects and collaborate with international teams.">
+            Français C1, anglais B2, arabe C2. Capacité à travailler dans des environnements
+            multiculturels, à présenter des projets et à collaborer avec des équipes internationales.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section container" id="education">
+    <div class="eyebrow reveal" data-fr="Formation" data-en="Education">Formation</div>
+    <h2 class="section-title reveal"
+        data-fr-html='Un parcours académique <span>double compétence</span>'
+        data-en-html='A dual-expertise <span>academic journey</span>'>Un parcours académique <span>double compétence</span></h2>
+    <p class="section-subtitle reveal"
+       data-fr="Informatique, cybersécurité, génie électrique, informatique industrielle et math-technique : un parcours qui relie la logique, les systèmes et la technologie."
+       data-en="Computer science, cybersecurity, electrical engineering, industrial computing and technical mathematics: a path connecting logic, systems and technology.">
+      Informatique, cybersécurité, génie électrique, informatique industrielle et math-technique :
+      un parcours qui relie la logique, les systèmes et la technologie.
+    </p>
+
+    <div class="timeline" style="margin-top:42px;">
+
+      <div class="timeline-item glass reveal">
+        <div class="item-top">
+          <div class="item-title" data-fr="Baccalauréat en informatique — concentration cybersécurité" data-en="Bachelor's in Computer Science — Cybersecurity">Baccalauréat en informatique — concentration cybersécurité</div>
+          <div class="item-date" data-fr="Canada" data-en="Canada">Canada</div>
+        </div>
+        <div class="item-org">Université du Québec en Outaouais (UQO) · Gatineau, Québec</div>
+        <p class="item-desc"
+           data-fr-html="Formation universitaire de 3 ans en informatique avec concentration en <strong>cybersécurité</strong>. Programme complet couvrant la programmation, le développement logiciel, les réseaux, les bases de données et la sécurité des systèmes. Diplômé avec une <strong>moyenne d'excellence de 3.50+ / 4.30</strong>."
+           data-en-html="3-year university degree in computer science with a <strong>cybersecurity</strong> specialisation. Full program covering programming, software development, networks, databases and systems security. Graduated with an <strong>excellence GPA of 3.50+ / 4.30</strong>.">
+          Formation universitaire de 3 ans en informatique avec concentration en <strong>cybersécurité</strong>.
+          Programme complet couvrant la programmation, le développement logiciel, les réseaux, les bases de données
+          et la sécurité des systèmes. Diplômé avec une <strong>moyenne d'excellence de 3.50+ / 4.30</strong>.
+        </p>
+
+        <div class="edu-detail-grid">
+          <div class="edu-detail-col">
+            <div class="edu-detail-title"><i class="fa-solid fa-laptop-code"></i> <span data-fr="Matières principales" data-en="Core subjects">Matières principales</span></div>
+            <ul class="edu-detail-list">
+              <li data-fr="Programmation orientée objet (Python, Java, C/C++)" data-en="Object-oriented programming (Python, Java, C/C++)">Programmation orientée objet (Python, Java, C/C++)</li>
+              <li data-fr="Algorithmes et structures de données" data-en="Algorithms and data structures">Algorithmes et structures de données</li>
+              <li data-fr="Développement logiciel &amp; méthodes agiles (Git, UML)" data-en="Software development &amp; agile methods (Git, UML)">Développement logiciel &amp; méthodes agiles (Git, UML)</li>
+              <li data-fr="Réseaux informatiques &amp; protocoles (TCP/IP, DNS, VPN)" data-en="Computer networks &amp; protocols (TCP/IP, DNS, VPN)">Réseaux informatiques &amp; protocoles (TCP/IP, DNS, VPN)</li>
+              <li data-fr="Bases de données relationnelles &amp; SQL" data-en="Relational databases &amp; SQL">Bases de données relationnelles &amp; SQL</li>
+              <li data-fr="Systèmes d'exploitation (Linux &amp; Windows)" data-en="Operating systems (Linux &amp; Windows)">Systèmes d'exploitation (Linux &amp; Windows)</li>
+              <li data-fr="Cybersécurité &amp; sécurité des systèmes d'information" data-en="Cybersecurity &amp; information systems security">Cybersécurité &amp; sécurité des systèmes d'information</li>
+              <li data-fr="Cryptographie &amp; protocoles sécurisés" data-en="Cryptography &amp; secure protocols">Cryptographie &amp; protocoles sécurisés</li>
+            </ul>
+          </div>
+          <div class="edu-detail-col">
+            <div class="edu-detail-title"><i class="fa-solid fa-star"></i> <span data-fr="Concentration &amp; accomplissements" data-en="Specialisation &amp; achievements">Concentration &amp; accomplissements</span></div>
+            <ul class="edu-detail-list">
+              <li data-fr-html="<strong>Concentration Cybersécurité</strong> — sécurité offensive &amp; défensive" data-en-html="<strong>Cybersecurity specialisation</strong> — offensive &amp; defensive security"><strong>Concentration Cybersécurité</strong> — sécurité offensive &amp; défensive</li>
+              <li data-fr-html="<strong>Moyenne 3.50+ / 4.30</strong> — classement d'excellence" data-en-html="<strong>GPA 3.50+ / 4.30</strong> — excellence ranking"><strong>Moyenne 3.50+ / 4.30</strong> — classement d'excellence</li>
+              <li data-fr="Formation entièrement bilingue français / anglais" data-en="Fully bilingual training in French / English">Formation entièrement bilingue français / anglais</li>
+              <li data-fr="Projets de développement logiciel en équipe" data-en="Team-based software development projects">Projets de développement logiciel en équipe</li>
+              <li data-fr="Laboratoires pratiques en sécurité réseau" data-en="Hands-on network security labs">Laboratoires pratiques en sécurité réseau</li>
+              <li data-fr="Analyse de vulnérabilités et tests de pénétration" data-en="Vulnerability analysis and penetration testing">Analyse de vulnérabilités et tests de pénétration</li>
+              <li data-fr="Architecture et conception de systèmes sécurisés" data-en="Architecture and design of secure systems">Architecture et conception de systèmes sécurisés</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="chips" style="margin-top:18px;">
+          <span class="chip chip--blue" data-fr="Cybersécurité" data-en="Cybersecurity">Cybersécurité</span>
+          <span class="chip chip--gold">Python</span>
+          <span class="chip chip--gold">Java</span>
+          <span class="chip">C / C++</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Linux</span>
+          <span class="chip">Git / GitHub</span>
+          <span class="chip">TCP/IP</span>
+          <span class="chip chip--blue" data-fr="Réseaux" data-en="Networks">Réseaux</span>
+          <span class="chip">UML</span>
+          <span class="chip">Agile</span>
+          <span class="chip" data-fr="Cryptographie" data-en="Cryptography">Cryptographie</span>
+        </div>
+
+        <div class="edu-photos edu-photos--single" style="margin-top:22px;">
+          <div class="edu-photo-wrap">
+            <img src="images/uqo-graduation-1.jpg" alt="Remise de diplôme UQO — Abderrahim Aggoun" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item glass reveal">
+        <div class="item-top">
+          <div class="item-title" data-fr="Licence en Génie Électrique — Informatique Industrielle" data-en="Bachelor's in Electrical Engineering — Industrial Computing">Licence en Génie Électrique — Informatique Industrielle</div>
+          <div class="item-date" data-fr="2019 – 2022 · Guelma, Algérie" data-en="2019 – 2022 · Guelma, Algeria">2019 – 2022 · Guelma, Algérie</div>
+        </div>
+        <div class="item-org"
+             data-fr="Université 8 Mai 1945 — Guelma · Faculté des Sciences et de la Technologie"
+             data-en="Université 8 Mai 1945 — Guelma · Faculty of Science and Technology">Université 8 Mai 1945 — Guelma · Faculté des Sciences et de la Technologie</div>
+        <p class="item-desc"
+           data-fr-html="Formation d'ingénierie de 3 ans (système LMD) en systèmes électriques, automatisation industrielle, informatique embarquée et génie de contrôle. <strong>Major de promotion</strong> — diplômé avec les honneurs."
+           data-en-html="3-year engineering degree (LMD system) in electrical systems, industrial automation, embedded computing and control engineering. <strong>Valedictorian</strong> — graduated with honours.">
+          Formation d'ingénierie de 3 ans (système LMD) en systèmes électriques, automatisation industrielle,
+          informatique embarquée et génie de contrôle.
+          <strong>Major de promotion</strong> — diplômé avec les honneurs.
+        </p>
+
+        <div class="edu-detail-grid">
+          <div class="edu-detail-col">
+            <div class="edu-detail-title"><i class="fa-solid fa-book-open"></i> <span data-fr="Matières principales" data-en="Core subjects">Matières principales</span></div>
+            <ul class="edu-detail-list">
+              <li data-fr="Systèmes électriques &amp; électronique de puissance" data-en="Electrical systems &amp; power electronics">Systèmes électriques &amp; électronique de puissance</li>
+              <li data-fr="Automatisme &amp; logique industrielle (PLC/API)" data-en="Automation &amp; industrial logic (PLC/API)">Automatisme &amp; logique industrielle (PLC/API)</li>
+              <li data-fr="Informatique industrielle &amp; systèmes embarqués" data-en="Industrial computing &amp; embedded systems">Informatique industrielle &amp; systèmes embarqués</li>
+              <li data-fr="Instrumentation &amp; mesure" data-en="Instrumentation &amp; measurement">Instrumentation &amp; mesure</li>
+              <li data-fr="Réseaux industriels &amp; communication" data-en="Industrial networks &amp; communication">Réseaux industriels &amp; communication</li>
+              <li data-fr="Mathématiques appliquées &amp; signal" data-en="Applied mathematics &amp; signal processing">Mathématiques appliquées &amp; signal</li>
+              <li data-fr="Régulation &amp; asservissement" data-en="Control &amp; servo systems">Régulation &amp; asservissement</li>
+            </ul>
+          </div>
+          <div class="edu-detail-col">
+            <div class="edu-detail-title"><i class="fa-solid fa-trophy"></i> <span data-fr="Accomplissements" data-en="Achievements">Accomplissements</span></div>
+            <ul class="edu-detail-list">
+              <li data-fr-html="<strong>Major de promotion</strong> — meilleure moyenne de la cohorte" data-en-html="<strong>Valedictorian</strong> — highest GPA in the cohort"><strong>Major de promotion</strong> — meilleure moyenne de la cohorte</li>
+              <li data-fr-html="PFE sous forme de startup : <strong>ADADI</strong> (compteur intelligent)" data-en-html="Final-year project as a startup: <strong>ADADI</strong> (smart meter)">PFE sous forme de startup : <strong>ADADI</strong> (compteur intelligent)</li>
+              <li data-fr-html="<strong>3e au niveau national</strong> — concours national algérien" data-en-html="<strong>3rd nationally</strong> — Algerian national competition"><strong>3e au niveau national</strong> — concours national algérien</li>
+              <li data-fr-html="<strong>1er dans la ville</strong> de Guelma" data-en-html="<strong>1st in the city</strong> of Guelma"><strong>1er dans la ville</strong> de Guelma</li>
+              <li data-fr="Soutenance officielle devant jury avec drapeaux nationaux" data-en="Official defence before a jury with national flags">Soutenance officielle devant jury avec drapeaux nationaux</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="chips" style="margin-top:16px;">
+          <span class="chip chip--gold" data-fr="Génie électrique"    data-en="Electrical Engineering">Génie électrique</span>
+          <span class="chip chip--gold" data-fr="Automatisme"          data-en="Automation">Automatisme</span>
+          <span class="chip">PLC / API</span>
+          <span class="chip" data-fr="Systèmes embarqués"              data-en="Embedded Systems">Systèmes embarqués</span>
+          <span class="chip">IoT</span>
+          <span class="chip" data-fr="Instrumentation"                 data-en="Instrumentation">Instrumentation</span>
+          <span class="chip">C / C++</span>
+          <span class="chip">Matlab</span>
+        </div>
+
+        <div class="edu-photos edu-photos--single" style="margin-top:22px;">
+          <div class="edu-photo-wrap">
+            <img src="images/DSC06189.JPG" alt="Cérémonie officielle de soutenance — Université 8 Mai 1945, Guelma" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item glass reveal">
+        <div class="item-top">
+          <div class="item-title" data-fr="Certifications en Automatisme Industriel — Siemens TIA Portal" data-en="Industrial Automation Certifications — Siemens TIA Portal">Certifications en Automatisme Industriel — Siemens TIA Portal</div>
+          <div class="item-date" data-fr="Août 2022 · Oran, Algérie" data-en="August 2022 · Oran, Algeria">Août 2022 · Oran, Algérie</div>
+        </div>
+        <div class="item-org"
+             data-fr="C.F.B.I — Institut BOUHAMIDA · Formation spécialisée en Automatisme Industrielle et Robotique"
+             data-en="C.F.B.I — Institut BOUHAMIDA · Specialised Training in Industrial Automation and Robotics">C.F.B.I — Institut BOUHAMIDA · Formation spécialisée en Automatisme Industrielle et Robotique</div>
+        <p class="item-desc"
+           data-fr="Deux formations qualifiantes agréées par l'État algérien, spécialisées en automatisme industriel avec Siemens TIA Portal :"
+           data-en="Two state-approved qualifying courses specialised in industrial automation with Siemens TIA Portal:">
+          Deux formations qualifiantes agréées par l'État algérien, spécialisées en automatisme industriel avec Siemens TIA Portal :
+        </p>
+        <ul class="cert-list">
+          <li>
+            <i class="fa-solid fa-circle-check cert-check"></i>
+            <div>
+              <strong>Step 7 TIA Portal — Niveaux 01, 02 + HMI + SCADA</strong>
+              <span data-fr="Programmation automate, interfaces homme-machine et supervision SCADA industrielle."
+                    data-en="PLC programming, human-machine interfaces and industrial SCADA supervision.">Programmation automate, interfaces homme-machine et supervision SCADA industrielle.</span>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-check cert-check"></i>
+            <div>
+              <strong data-fr="Niveau 04 — Communication, Réseaux &amp; Bus de Terrain Industriel"
+                      data-en="Level 04 — Communication, Networks &amp; Industrial Fieldbus">Niveau 04 — Communication, Réseaux &amp; Bus de Terrain Industriel</strong>
+              <span data-fr="Réseaux industriels, protocoles de communication et bus de terrain (Profibus, Profinet) via Step 7 TIA."
+                    data-en="Industrial networks, communication protocols and fieldbuses (Profibus, Profinet) via Step 7 TIA.">Réseaux industriels, protocoles de communication et bus de terrain (Profibus, Profinet) via Step 7 TIA.</span>
+            </div>
+          </li>
+        </ul>
+        <div class="chips" style="margin-top:16px;">
+          <span class="chip chip--gold">Siemens TIA Portal</span>
+          <span class="chip chip--gold">Step 7</span>
+          <span class="chip">HMI</span>
+          <span class="chip">SCADA</span>
+          <span class="chip">Profibus</span>
+          <span class="chip">Profinet</span>
+          <span class="chip" data-fr="Réseaux industriels" data-en="Industrial Networks">Réseaux industriels</span>
+          <span class="chip" data-fr="Automatisme"          data-en="Automation">Automatisme</span>
+        </div>
+      </div>
+
+      <div class="timeline-item glass reveal">
+        <div class="item-top">
+          <div class="item-title" data-fr="Diplôme d'études collégiales en Math-Technique" data-en="College Diploma in Technical Mathematics">Diplôme d'études collégiales en Math-Technique</div>
+          <div class="item-date" data-fr="Base scientifique" data-en="Scientific foundation">Base scientifique</div>
+        </div>
+        <div class="item-org" data-fr="Formation préuniversitaire technique" data-en="Pre-university technical training">Formation préuniversitaire technique</div>
+        <p class="item-desc"
+           data-fr="Base solide en mathématiques, logique, analyse, raisonnement scientifique et résolution de problèmes."
+           data-en="Strong foundation in mathematics, logic, analysis, scientific reasoning and problem solving.">
+          Base solide en mathématiques, logique, analyse, raisonnement scientifique et résolution de problèmes.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section container" id="skills">
+    <div class="eyebrow reveal" data-fr="Compétences" data-en="Skills">Compétences</div>
+    <h2 class="section-title reveal"
+        data-fr-html='Compétences techniques &amp; <span>professionnelles</span>'
+        data-en-html='Technical &amp; <span>professional skills</span>'>Compétences techniques &amp; <span>professionnelles</span></h2>
+    <p class="section-subtitle reveal"
+       data-fr="Compétences en informatique, cybersécurité, développement logiciel, systèmes industriels et entrepreneuriat technologique."
+       data-en="Skills in computer science, cybersecurity, software development, industrial systems and tech entrepreneurship.">
+      Compétences en informatique, cybersécurité, développement logiciel, systèmes industriels et entrepreneuriat technologique.
+    </p>
+
+    <div class="skill-grid">
+      <div class="skill-card glass reveal">
+        <div class="skill-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3 data-fr="Cybersécurité" data-en="Cybersecurity">Cybersécurité</h3>
+        <ul>
+          <li data-fr="Sécurité des systèmes et réseaux"         data-en="Systems and network security">Sécurité des systèmes et réseaux</li>
+          <li data-fr="Analyse de vulnérabilités"                 data-en="Vulnerability analysis">Analyse de vulnérabilités</li>
+          <li data-fr="Bonnes pratiques de sécurité"              data-en="Security best practices">Bonnes pratiques de sécurité</li>
+          <li data-fr="Gestion des accès et authentification"     data-en="Access management and authentication">Gestion des accès et authentification</li>
+          <li data-fr="Sensibilisation aux risques numériques"    data-en="Digital risk awareness">Sensibilisation aux risques numériques</li>
+        </ul>
+      </div>
+
+      <div class="skill-card glass reveal">
+        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+        <h3 data-fr="Développement logiciel" data-en="Software Development">Développement logiciel</h3>
+        <ul>
+          <li>Python, Java, C/C++</li>
+          <li>HTML5, CSS3, JavaScript</li>
+          <li data-fr="Programmation orientée objet"   data-en="Object-oriented programming">Programmation orientée objet</li>
+          <li data-fr="Git, GitHub et documentation"   data-en="Git, GitHub and documentation">Git, GitHub et documentation</li>
+          <li data-fr="Tests, logique métier et architecture" data-en="Testing, business logic and architecture">Tests, logique métier et architecture</li>
+        </ul>
+      </div>
+
+      <div class="skill-card glass reveal">
+        <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+        <h3 data-fr="Réseaux &amp; systèmes" data-en="Networks &amp; Systems">Réseaux &amp; systèmes</h3>
+        <ul>
+          <li>TCP/IP, DNS, VPN, firewall</li>
+          <li>Linux &amp; Windows</li>
+          <li data-fr="Administration système de base"     data-en="Basic system administration">Administration système de base</li>
+          <li data-fr="Surveillance et diagnostic"         data-en="Monitoring and diagnostics">Surveillance et diagnostic</li>
+          <li data-fr="Infrastructure et sécurité réseau"  data-en="Network infrastructure and security">Infrastructure et sécurité réseau</li>
+        </ul>
+      </div>
+
+      <div class="skill-card glass reveal">
+        <div class="skill-icon"><i class="fa-solid fa-bolt"></i></div>
+        <h3 data-fr="Génie électrique" data-en="Electrical Engineering">Génie électrique</h3>
+        <ul>
+          <li data-fr="Informatique industrielle"     data-en="Industrial computing">Informatique industrielle</li>
+          <li data-fr="Automatisation"                data-en="Automation">Automatisation</li>
+          <li data-fr="Systèmes embarqués"            data-en="Embedded systems">Systèmes embarqués</li>
+          <li data-fr="Instrumentation et contrôle"   data-en="Instrumentation and control">Instrumentation et contrôle</li>
+          <li data-fr="Logique industrielle et IoT"   data-en="Industrial logic and IoT">Logique industrielle et IoT</li>
+        </ul>
+      </div>
+
+      <div class="skill-card glass reveal">
+        <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h3 data-fr="Business &amp; startup" data-en="Business &amp; Startup">Business &amp; startup</h3>
+        <ul>
+          <li data-fr="Esprit entrepreneurial"                   data-en="Entrepreneurial mindset">Esprit entrepreneurial</li>
+          <li data-fr="Analyse de marché"                        data-en="Market analysis">Analyse de marché</li>
+          <li data-fr="Présentation de projet"                   data-en="Project presentation">Présentation de projet</li>
+          <li data-fr="Vision produit et amélioration continue"  data-en="Product vision and continuous improvement">Vision produit et amélioration continue</li>
+          <li data-fr="Création de valeur et stratégie"          data-en="Value creation and strategy">Création de valeur et stratégie</li>
+        </ul>
+      </div>
+
+      <div class="skill-card glass reveal">
+        <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+        <h3 data-fr="Soft skills" data-en="Soft Skills">Soft skills</h3>
+        <ul>
+          <li data-fr="Discipline et autonomie"              data-en="Discipline and autonomy">Discipline et autonomie</li>
+          <li data-fr="Apprentissage rapide"                 data-en="Fast learner">Apprentissage rapide</li>
+          <li data-fr="Résolution de problèmes complexes"   data-en="Complex problem solving">Résolution de problèmes complexes</li>
+          <li data-fr="Leadership académique"                data-en="Academic leadership">Leadership académique</li>
+          <li data-fr="Communication professionnelle"        data-en="Professional communication">Communication professionnelle</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages -->
+  <section class="section container" id="languages">
+    <div class="eyebrow reveal" data-fr="Langues" data-en="Languages">Langues</div>
+    <h2 class="section-title reveal"
+        data-fr-html='Communication <span>multilingue</span>'
+        data-en-html='<span>Multilingual</span> communication'>Communication <span>multilingue</span></h2>
+    <p class="section-subtitle reveal"
+       data-fr="Un avantage pour évoluer au Canada, collaborer dans des environnements internationaux et présenter des projets à différents publics."
+       data-en="An asset for working in Canada, collaborating in international environments and presenting projects to diverse audiences.">
+      Un avantage pour évoluer au Canada, collaborer dans des environnements internationaux et présenter des projets à différents publics.
+    </p>
+
+    <div class="language-row">
+      <div class="language-card glass reveal">
+        <div class="language-level">C1</div>
+        <div class="language-name" data-fr="Français" data-en="French">Français</div>
+        <div class="language-desc" data-fr="Niveau avancé — communication académique et professionnelle." data-en="Advanced level — academic and professional communication.">Niveau avancé — communication académique et professionnelle.</div>
+        <div class="bar"><span style="width:92%"></span></div>
+      </div>
+      <div class="language-card glass reveal">
+        <div class="language-level">B2</div>
+        <div class="language-name" data-fr="Anglais" data-en="English">Anglais</div>
+        <div class="language-desc" data-fr="Niveau avancé/intermédiaire supérieur — environnement technique et professionnel." data-en="Upper-intermediate/advanced — technical and professional environment.">Niveau avancé/intermédiaire supérieur — environnement technique et professionnel.</div>
+        <div class="bar"><span style="width:82%"></span></div>
+      </div>
+      <div class="language-card glass reveal">
+        <div class="language-level">C2</div>
+        <div class="language-name" data-fr="Arabe" data-en="Arabic">Arabe</div>
+        <div class="language-desc" data-fr="Maîtrise complète — communication naturelle et professionnelle." data-en="Full mastery — natural and professional communication.">Maîtrise complète — communication naturelle et professionnelle.</div>
+        <div class="bar"><span style="width:100%"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section container" id="projects">
+    <div class="eyebrow reveal" data-fr="Projets" data-en="Projects">Projets</div>
+    <h2 class="section-title reveal"
+        data-fr-html='Projets, startup &amp; <span>réalisations</span>'
+        data-en-html='Projects, startup &amp; <span>achievements</span>'>Projets, startup &amp; <span>réalisations</span></h2>
+    <p class="section-subtitle reveal"
+       data-fr="Projets concrets démontrant mes compétences : startup nationale, cybersécurité, développement logiciel et innovation IoT."
+       data-en="Concrete projects demonstrating my skills: national startup, cybersecurity, software development and IoT innovation.">
+      Projets concrets démontrant mes compétences : startup nationale, cybersécurité, développement logiciel et innovation IoT.
+    </p>
+
+    <div class="project-grid">
+
+      <article class="project-card project-card--featured glass reveal">
+        <div class="media-box media-box--video">
+          <video class="project-video" src="assets/videos/VID_20230622_093459_406.mp4" controls preload="metadata" playsinline></video>
+        </div>
+        <div class="project-body">
+          <div class="project-badges">
+            <span class="project-badge project-badge--gold"><i class="fa-solid fa-trophy"></i> 3<sup>e</sup> <span data-fr="National — Algérie" data-en="National — Algeria">National — Algérie</span></span>
+            <span class="project-badge project-badge--blue"><i class="fa-solid fa-medal"></i> 1<sup>er</sup> Wilaya de Guelma</span>
+            <span class="project-badge project-badge--green"><i class="fa-solid fa-certificate"></i> <span data-fr="Projet brevetable" data-en="Patentable project">Projet brevetable</span></span>
+          </div>
+          <div class="project-type" data-fr="Startup · Projet de fin d'études · IoT · Innovation" data-en="Startup · Final Year Project · IoT · Innovation">Startup · Projet de fin d'études · IoT · Innovation</div>
+          <div class="project-title">ADADI — <span data-fr="Système de surveillance de la consommation d'énergie" data-en="Energy Consumption Monitoring System">Système de surveillance de la consommation d'énergie</span></div>
+          <p class="project-desc"
+             data-fr-html="Startup technologique fondée en Algérie à 21 ans. ADADI est un compteur électrique intelligent basé sur un microcontrôleur <strong>ESP32</strong> qui mesure en temps réel la consommation d'énergie (courant via ACS712, tension via ZMPT101B, puissance active, énergie cumulée) et la transmet via Wi-Fi vers une application mobile <strong>BLYNK</strong>. Affichage local sur écran LCD 16×2 I2C. Co-fondé avec <em>Menani Amir Med Hani</em>, supervisé par le Pr. Babouri Abdessalem."
+             data-en-html="Technology startup founded in Algeria at age 21. ADADI is an intelligent electric meter based on an <strong>ESP32</strong> microcontroller that measures real-time energy consumption (current via ACS712, voltage via ZMPT101B, active power, cumulative energy) and transmits it via Wi-Fi to a <strong>BLYNK</strong> mobile app. Local display on a 16×2 I2C LCD. Co-founded with <em>Menani Amir Med Hani</em>, supervised by Prof. Babouri Abdessalem.">
+            Startup technologique fondée en Algérie à 21 ans. ADADI est un compteur électrique intelligent
+            basé sur un microcontrôleur <strong>ESP32</strong> qui mesure en temps réel la consommation d'énergie
+            (courant via ACS712, tension via ZMPT101B, puissance active, énergie cumulée) et la transmet via
+            Wi-Fi vers une application mobile <strong>BLYNK</strong>. Affichage local sur écran LCD 16×2 I2C.
+            Co-fondé avec <em>Menani Amir Med Hani</em>, supervisé par le Pr. Babouri Abdessalem.
+          </p>
+          <div class="chips">
+            <span class="chip chip--blue">ESP32</span>
+            <span class="chip chip--gold">ACS712</span>
+            <span class="chip chip--gold">ZMPT101B</span>
+            <span class="chip chip--blue">BLYNK IoT</span>
+            <span class="chip">Arduino IDE</span>
+            <span class="chip">Wi-Fi</span>
+            <span class="chip">EmonLib</span>
+            <span class="chip">LCD 16×2 I2C</span>
+            <span class="chip">C++</span>
+          </div>
+
+          <div class="adadi-distinctions">
+            <div class="distinctions-title"><i class="fa-solid fa-award"></i> <span data-fr="Distinctions officielles reçues" data-en="Official distinctions received">Distinctions officielles reçues</span></div>
+            <ul class="distinctions-list">
+              <li>
+                <i class="fa-solid fa-star distinctions-star"></i>
+                <div>
+                  <strong data-fr="Wali de la Wilaya de Guelma" data-en="Wali of the Wilaya of Guelma">Wali de la Wilaya de Guelma</strong>
+                  <span data-fr="Remise officielle du prix par le représentant de l'État" data-en="Official award presented by the State representative">Remise officielle du prix par le représentant de l'État</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-star distinctions-star"></i>
+                <div>
+                  <strong data-fr="Président de l'Assemblée Populaire de Wilaya (APW)" data-en="President of the Wilaya Popular Assembly (APW)">Président de l'Assemblée Populaire de Wilaya (APW)</strong>
+                  <span data-fr="Distinction pour l'excellence et l'innovation technologique" data-en="Award for excellence and technological innovation">Distinction pour l'excellence et l'innovation technologique</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-star distinctions-star"></i>
+                <div>
+                  <strong data-fr="Médiateur de la République en Algérie" data-en="Mediator of the Republic of Algeria">Médiateur de la République en Algérie</strong>
+                  <span data-fr="Reconnaissance nationale pour un projet à impact sociétal" data-en="National recognition for a project with societal impact">Reconnaissance nationale pour un projet à impact sociétal</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-star distinctions-star"></i>
+                <div>
+                  <strong data-fr="Recteur de l'Université 8 Mai 1945 — Guelma" data-en="Rector of Université 8 Mai 1945 — Guelma">Recteur de l'Université 8 Mai 1945 — Guelma</strong>
+                  <span data-fr="Prix d'excellence académique et entrepreneuriale" data-en="Academic and entrepreneurial excellence award">Prix d'excellence académique et entrepreneuriale</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal">
+        <div class="media-box">
+          <div class="media-placeholder">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3 data-fr="Cybersécurité" data-en="Cybersecurity">Cybersécurité</h3>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-type" data-fr="Cybersécurité" data-en="Cybersecurity">Cybersécurité</div>
+          <div class="project-title" data-fr="Simulation réseau &amp; sécurité" data-en="Network &amp; security simulation">Simulation réseau &amp; sécurité</div>
+          <p class="project-desc" data-fr="Projet lié aux réseaux, à la détection d'attaques, à l'analyse du trafic et à la configuration sécurisée des systèmes." data-en="Project related to networks, attack detection, traffic analysis and secure system configuration.">
+            Projet lié aux réseaux, à la détection d'attaques, à l'analyse du trafic et à la configuration sécurisée des systèmes.
+          </p>
+          <div class="chips">
+            <span class="chip">Network</span>
+            <span class="chip">Security</span>
+            <span class="chip">Linux</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal">
+        <div class="media-box">
+          <div class="media-placeholder">
+            <i class="fa-solid fa-code"></i>
+            <h3 data-fr="Développement" data-en="Development">Développement</h3>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-type" data-fr="Développement logiciel" data-en="Software Development">Développement logiciel</div>
+          <div class="project-title" data-fr="Application &amp; système de gestion" data-en="Application &amp; management system">Application &amp; système de gestion</div>
+          <p class="project-desc" data-fr="Projet développé en Python, Java ou SQL — architecture logicielle, fonctionnalités métier et intégration de bases de données." data-en="Project developed in Python, Java or SQL — software architecture, business logic and database integration.">
+            Projet développé en Python, Java ou SQL — architecture logicielle, fonctionnalités métier et intégration de bases de données.
+          </p>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">Java</span>
+            <span class="chip">SQL</span>
+            <span class="chip">GitHub</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section container" id="services">
+    <div class="eyebrow reveal" data-fr="Services" data-en="Services">Services</div>
+    <h2 class="section-title reveal"
+        data-fr-html='Ce que je <span>propose</span>'
+        data-en-html='What I <span>offer</span>'>Ce que je <span>propose</span></h2>
+    <p class="section-subtitle reveal"
+       data-fr="Services informatiques, web et digitaux — développement de site, cybersécurité, support matériel et design. Disponible en présentiel (Gatineau / Ottawa) et à distance."
+       data-en="IT, web and digital services — website development, cybersecurity, hardware support and design. Available in person (Gatineau / Ottawa) and remotely.">
+      Services informatiques, web et digitaux — développement de site, cybersécurité, support matériel et design.
+      Disponible en présentiel (Gatineau / Ottawa) et à distance.
+    </p>
+
+    <div class="services-grid">
+
+      <div class="services-card glass reveal">
+        <div class="services-cat-header">
+          <div class="services-cat-icon"><i class="fa-solid fa-globe"></i></div>
+          <div class="services-cat-meta">
+            <h3 class="services-cat-title" data-fr="Développement Web &amp; Digital" data-en="Web &amp; Digital Development">Développement Web &amp; Digital</h3>
+            <span class="services-count">12 services</span>
+          </div>
+        </div>
+        <ul class="services-list">
+          <li><i class="fa-solid fa-store svc-icon"></i><span data-fr="Création de site web vitrine"   data-en="Business showcase website">Création de site web vitrine</span></li>
+          <li><i class="fa-solid fa-briefcase svc-icon"></i><span data-fr="Création de site portfolio"  data-en="Portfolio website">Création de site portfolio</span></li>
+          <li><i class="fa-solid fa-cart-shopping svc-icon"></i><span data-fr="Création de site e-commerce" data-en="E-commerce website">Création de site e-commerce</span></li>
+          <li><i class="fa-solid fa-hand-pointer svc-icon"></i><span data-fr="Landing page"             data-en="Landing page">Landing page</span></li>
+          <li><i class="fa-solid fa-rotate svc-icon"></i><span data-fr="Refonte de site"                data-en="Website redesign">Refonte de site</span></li>
+          <li><i class="fa-solid fa-code svc-icon"></i><span data-fr="Intégration HTML / CSS / JS"      data-en="HTML / CSS / JS integration">Intégration HTML / CSS / JS</span></li>
+          <li><i class="fa-solid fa-chart-line svc-icon"></i><span data-fr="Optimisation SEO"           data-en="SEO optimisation">Optimisation SEO</span></li>
+          <li><i class="fa-solid fa-file-pen svc-icon"></i><span data-fr="Rédaction de cahier des charges" data-en="Specification writing">Rédaction de cahier des charges</span></li>
+          <li><i class="fa-solid fa-pen-ruler svc-icon"></i><span data-fr="Maquette et wireframe"       data-en="Mockup and wireframe">Maquette et wireframe</span></li>
+          <li><i class="fa-solid fa-server svc-icon"></i><span data-fr="Hébergement et mise en ligne"   data-en="Hosting and deployment">Hébergement et mise en ligne</span></li>
+          <li><i class="fa-solid fa-earth-americas svc-icon"></i><span data-fr="Configuration DNS"      data-en="DNS configuration">Configuration DNS</span></li>
+          <li><i class="fa-solid fa-wrench svc-icon"></i><span data-fr="Maintenance de site web"        data-en="Website maintenance">Maintenance de site web</span></li>
+        </ul>
+      </div>
+
+      <div class="services-card glass reveal">
+        <div class="services-cat-header">
+          <div class="services-cat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <div class="services-cat-meta">
+            <h3 class="services-cat-title" data-fr="Support Informatique &amp; Hardware" data-en="IT Support &amp; Hardware">Support Informatique &amp; Hardware</h3>
+            <span class="services-count">11 services</span>
+          </div>
+        </div>
+        <ul class="services-list">
+          <li><i class="fa-solid fa-floppy-disk svc-icon"></i><span data-fr="Formatage et réinstallation Windows" data-en="Windows format and reinstall">Formatage et réinstallation Windows</span></li>
+          <li><i class="fa-solid fa-broom svc-icon"></i><span data-fr="Nettoyage et optimisation PC"              data-en="PC cleanup and optimisation">Nettoyage et optimisation PC</span></li>
+          <li><i class="fa-solid fa-stethoscope svc-icon"></i><span data-fr="Diagnostic de panne"                 data-en="Fault diagnosis">Diagnostic de panne</span></li>
+          <li><i class="fa-solid fa-memory svc-icon"></i><span data-fr="Remplacement SSD / RAM"                   data-en="SSD / RAM replacement">Remplacement SSD / RAM</span></li>
+          <li><i class="fa-solid fa-laptop svc-icon"></i><span data-fr="Réparation PC bureau et portable"         data-en="Desktop and laptop repair">Réparation PC bureau et portable</span></li>
+          <li><i class="fa-solid fa-microchip svc-icon"></i><span data-fr="Configuration BIOS"                    data-en="BIOS configuration">Configuration BIOS</span></li>
+          <li><i class="fa-solid fa-hard-drive svc-icon"></i><span data-fr="Récupération de données"              data-en="Data recovery">Récupération de données</span></li>
+          <li><i class="fa-solid fa-puzzle-piece svc-icon"></i><span data-fr="Assemblage PC sur mesure"           data-en="Custom PC build">Assemblage PC sur mesure</span></li>
+          <li><i class="fa-solid fa-download svc-icon"></i><span data-fr="Installation logiciels et drivers"      data-en="Software and driver installation">Installation logiciels et drivers</span></li>
+          <li><i class="fa-solid fa-user-shield svc-icon"></i><span data-fr="Sécurisation et antivirus"           data-en="Security and antivirus">Sécurisation et antivirus</span></li>
+          <li><i class="fa-solid fa-wind svc-icon"></i><span data-fr="Nettoyage physique"                         data-en="Physical cleaning">Nettoyage physique</span></li>
+        </ul>
+      </div>
+
+      <div class="services-card glass reveal">
+        <div class="services-cat-header">
+          <div class="services-cat-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <div class="services-cat-meta">
+            <h3 class="services-cat-title" data-fr="Mobile &amp; Tablettes" data-en="Mobile &amp; Tablets">Mobile &amp; Tablettes</h3>
+            <span class="services-count">5 services</span>
+          </div>
+        </div>
+        <ul class="services-list">
+          <li><i class="fa-solid fa-rotate svc-icon"></i><span data-fr="Formatage Android et iOS"         data-en="Android and iOS format">Formatage Android et iOS</span></li>
+          <li><i class="fa-solid fa-arrow-right-arrow-left svc-icon"></i><span data-fr="Transfert de données" data-en="Data transfer">Transfert de données</span></li>
+          <li><i class="fa-solid fa-gear svc-icon"></i><span data-fr="Configuration Google / Apple"       data-en="Google / Apple account setup">Configuration Google / Apple</span></li>
+          <li><i class="fa-solid fa-bug svc-icon"></i><span data-fr="Dépannage logiciel mobile"           data-en="Mobile software troubleshooting">Dépannage logiciel mobile</span></li>
+          <li><i class="fa-solid fa-arrows-rotate svc-icon"></i><span data-fr="Mise à jour système"       data-en="System update">Mise à jour système</span></li>
+        </ul>
+      </div>
+
+      <div class="services-card glass reveal">
+        <div class="services-cat-header">
+          <div class="services-cat-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <div class="services-cat-meta">
+            <h3 class="services-cat-title" data-fr="Périphériques &amp; Réseau" data-en="Peripherals &amp; Network">Périphériques &amp; Réseau</h3>
+            <span class="services-count">6 services</span>
+          </div>
+        </div>
+        <ul class="services-list">
+          <li><i class="fa-solid fa-print svc-icon"></i><span data-fr="Installation d'imprimante"   data-en="Printer installation">Installation d'imprimante</span></li>
+          <li><i class="fa-solid fa-triangle-exclamation svc-icon"></i><span data-fr="Dépannage imprimante" data-en="Printer troubleshooting">Dépannage imprimante</span></li>
+          <li><i class="fa-solid fa-wifi svc-icon"></i><span data-fr="Configuration Wi-Fi"          data-en="Wi-Fi configuration">Configuration Wi-Fi</span></li>
+          <li><i class="fa-solid fa-sliders svc-icon"></i><span data-fr="Configuration routeur"     data-en="Router configuration">Configuration routeur</span></li>
+          <li><i class="fa-solid fa-ethernet svc-icon"></i><span data-fr="Réseau local (LAN)"       data-en="Local network (LAN)">Réseau local (LAN)</span></li>
+          <li><i class="fa-solid fa-share-nodes svc-icon"></i><span data-fr="Partage réseau"        data-en="Network sharing">Partage réseau</span></li>
+        </ul>
+      </div>
+
+      <div class="services-card glass reveal">
+        <div class="services-cat-header">
+          <div class="services-cat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="services-cat-meta">
+            <h3 class="services-cat-title" data-fr="Cybersécurité" data-en="Cybersecurity">Cybersécurité</h3>
+            <span class="services-count">6 services</span>
+          </div>
+        </div>
+        <ul class="services-list">
+          <li><i class="fa-solid fa-magnifying-glass svc-icon"></i><span data-fr="Audit de sécurité"           data-en="Security audit">Audit de sécurité</span></li>
+          <li><i class="fa-solid fa-fire svc-icon"></i><span data-fr="Pare-feu"                                data-en="Firewall">Pare-feu</span></li>
+          <li><i class="fa-solid fa-graduation-cap svc-icon"></i><span data-fr="Sensibilisation cybersécurité" data-en="Cybersecurity awareness">Sensibilisation cybersécurité</span></li>
+          <li><i class="fa-solid fa-lock svc-icon"></i><span data-fr="Configuration VPN"                       data-en="VPN configuration">Configuration VPN</span></li>
+          <li><i class="fa-solid fa-key svc-icon"></i><span data-fr="Gestion des mots de passe"                data-en="Password management">Gestion des mots de passe</span></li>
+          <li><i class="fa-solid fa-virus-slash svc-icon"></i><span data-fr="Suppression malwares"             data-en="Malware removal">Suppression malwares</span></li>
+        </ul>
+      </div>
+
+      <div class="services-card glass reveal">
+        <div class="services-cat-header">
+          <div class="services-cat-icon"><i class="fa-solid fa-file-lines"></i></div>
+          <div class="services-cat-meta">
+            <h3 class="services-cat-title" data-fr="Bureautique &amp; Documents" data-en="Office &amp; Documents">Bureautique &amp; Documents</h3>
+            <span class="services-count">5 services</span>
+          </div>
+        </div>
+        <ul class="services-list">
+          <li><i class="fa-solid fa-id-card svc-icon"></i><span data-fr="Création de CV"            data-en="CV creation">Création de CV</span></li>
+          <li><i class="fa-solid fa-file-pdf svc-icon"></i><span data-fr="Mise en page Word / PDF"  data-en="Word / PDF formatting">Mise en page Word / PDF</span></li>
+          <li><i class="fa-solid fa-display svc-icon"></i><span data-fr="Présentations PowerPoint"  data-en="PowerPoint presentations">Présentations PowerPoint</span></li>
+          <li><i class="fa-solid fa-table svc-icon"></i><span data-fr="Tableaux Excel"              data-en="Excel spreadsheets">Tableaux Excel</span></li>
+          <li><i class="fa-solid fa-file-pen svc-icon"></i><span data-fr="Rédaction de rapports"    data-en="Report writing">Rédaction de rapports</span></li>
+        </ul>
+      </div>
+
+      <div class="services-card glass reveal">
+        <div class="services-cat-header">
+          <div class="services-cat-icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <div class="services-cat-meta">
+            <h3 class="services-cat-title" data-fr="Design" data-en="Design">Design</h3>
+            <span class="services-count">4 services</span>
+          </div>
+        </div>
+        <ul class="services-list">
+          <li><i class="fa-solid fa-paintbrush svc-icon"></i><span data-fr="Création de logo"         data-en="Logo creation">Création de logo</span></li>
+          <li><i class="fa-solid fa-palette svc-icon"></i><span data-fr="Charte graphique"             data-en="Brand identity">Charte graphique</span></li>
+          <li><i class="fa-solid fa-hashtag svc-icon"></i><span data-fr="Visuels réseaux sociaux"      data-en="Social media visuals">Visuels réseaux sociaux</span></li>
+          <li><i class="fa-solid fa-image svc-icon"></i><span data-fr="Flyers et affiches"             data-en="Flyers and posters">Flyers et affiches</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="services-cta reveal">
+      <p class="services-cta-text" data-fr="Un projet en tête ? Je réponds rapidement." data-en="Have a project in mind? I respond quickly.">Un projet en tête ? Je réponds rapidement.</p>
+      <a class="btn btn-primary" href="#contact"><i class="fa-solid fa-paper-plane"></i> <span data-fr="Me contacter" data-en="Contact me">Me contacter</span></a>
+    </div>
+  </section>
+
+  <!-- Media -->
+  <section class="section container" id="media">
+    <div class="eyebrow reveal" data-fr="Médias" data-en="Media">Médias</div>
+    <h2 class="section-title reveal"
+        data-fr-html='Distinctions, vidéos &amp; <span>preuves</span>'
+        data-en-html='Awards, videos &amp; <span>evidence</span>'>Distinctions, vidéos &amp; <span>preuves</span></h2>
+    <p class="section-subtitle reveal"
+       data-fr="Cérémonie officielle de remise des prix pour le projet ADADI — récompensé par les plus hautes autorités de la wilaya de Guelma et par un représentant national algérien."
+       data-en="Official award ceremony for the ADADI project — recognised by the highest authorities of the Wilaya of Guelma and a national Algerian representative.">
+      Cérémonie officielle de remise des prix pour le projet ADADI — récompensé par les plus hautes autorités de la wilaya de Guelma et par un représentant national algérien.
+    </p>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item big glass reveal gallery-item--video">
+        <video class="gallery-video" src="assets/videos/InShot_20230706_123643148.mp4" controls preload="metadata" playsinline></video>
+        <div class="gallery-video-caption">
+          <i class="fa-solid fa-award"></i>
+          <span data-fr="Cérémonie officielle — Distinctions ADADI · Wilaya de Guelma, 2023"
+                data-en="Official ceremony — ADADI Awards · Wilaya of Guelma, 2023">Cérémonie officielle — Distinctions ADADI · Wilaya de Guelma, 2023</span>
+        </div>
+      </div>
+
+      <div class="gallery-item glass reveal gallery-item--video">
+        <video class="gallery-video" src="assets/videos/InShot_20230706_231256908.mp4" controls preload="metadata" playsinline></video>
+        <div class="gallery-video-caption">
+          <i class="fa-solid fa-trophy"></i>
+          <span data-fr="Remise des prix — Wali · APW · Médiateur · Recteur"
+                data-en="Award ceremony — Wali · APW · Mediator · Rector">Remise des prix — Wali · APW · Médiateur · Recteur</span>
+        </div>
+      </div>
+
+      <div class="gallery-item glass reveal">
+        <div class="gallery-content">
+          <i class="fa-solid fa-certificate"></i>
+          <h3 data-fr="Certifications" data-en="Certifications">Certifications</h3>
+          <p data-fr="C.F.B.I — Automatisme Siemens TIA Portal" data-en="C.F.B.I — Siemens TIA Portal Automation">C.F.B.I — Automatisme Siemens TIA Portal</p>
+        </div>
+      </div>
+
+      <div class="gallery-item glass reveal">
+        <div class="gallery-content">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h3 data-fr="Diplômes" data-en="Degrees">Diplômes</h3>
+          <p data-fr="UQO (Canada) &amp; Université 8 Mai 1945 (Algérie)" data-en="UQO (Canada) &amp; Université 8 Mai 1945 (Algeria)">UQO (Canada) &amp; Université 8 Mai 1945 (Algérie)</p>
+        </div>
+      </div>
+
+      <div class="gallery-item glass reveal">
+        <div class="gallery-content">
+          <i class="fa-brands fa-github"></i>
+          <h3>GitHub</h3>
+          <p data-fr="Projets et contributions open source" data-en="Projects and open source contributions">Projets et contributions open source</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section container" id="contact">
+    <div class="eyebrow reveal" data-fr="Contact" data-en="Contact">Contact</div>
+    <h2 class="section-title reveal"
+        data-fr-html='Travaillons <span>ensemble</span>'
+        data-en-html="Let's work <span>together</span>">Travaillons <span>ensemble</span></h2>
+    <p class="section-subtitle reveal"
+       data-fr="Disponible pour opportunités en informatique, cybersécurité, support TI, développement logiciel, stages, collaborations et projets entrepreneuriaux."
+       data-en="Available for opportunities in IT, cybersecurity, tech support, software development, internships, collaborations and entrepreneurial projects.">
+      Disponible pour opportunités en informatique, cybersécurité, support TI, développement logiciel,
+      stages, collaborations et projets entrepreneuriaux.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-list">
+
+        <a class="contact-item glass reveal" href="mailto:agg.abderrahim@gmail.com">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">agg.abderrahim@gmail.com</div>
+          </div>
+        </a>
+
+        <a class="contact-item glass reveal" href="https://www.linkedin.com/in/abderrahim-aggoun" target="_blank" rel="noopener">
+          <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">linkedin.com/in/abderrahim-aggoun</div>
+          </div>
+        </a>
+
+        <a class="contact-item glass reveal" href="https://github.com/abderrahim-aggoun" target="_blank" rel="noopener">
+          <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+          <div>
+            <div class="contact-label">GitHub</div>
+            <div class="contact-value">github.com/abderrahim-aggoun</div>
+          </div>
+        </a>
+
+        <div class="contact-item glass reveal">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <div class="contact-label" data-fr="Localisation" data-en="Location">Localisation</div>
+            <div class="contact-value">Gatineau, Québec, Canada</div>
+          </div>
+        </div>
+
+        <a class="contact-item glass reveal" href="assets/cv/CV_Aggoun_FR_v2.pdf" target="_blank">
+          <div class="contact-icon"><i class="fa-solid fa-file-pdf"></i></div>
+          <div>
+            <div class="contact-label" data-fr="CV — Français" data-en="CV — French">CV — Français</div>
+            <div class="contact-value" data-fr="Télécharger la version FR" data-en="Download FR version">Télécharger la version FR</div>
+          </div>
+        </a>
+
+        <a class="contact-item glass reveal" href="assets/cv/CV_Aggoun_EN_v2.pdf" target="_blank">
+          <div class="contact-icon"><i class="fa-solid fa-file-pdf"></i></div>
+          <div>
+            <div class="contact-label" data-fr="CV — Anglais" data-en="CV — English">CV — Anglais</div>
+            <div class="contact-value" data-fr="Télécharger la version EN" data-en="Download EN version">Télécharger la version EN</div>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="rich-card glass reveal">
+        <form onsubmit="sendMessage(event)">
+          <input type="text"  data-fr-placeholder="Votre nom"     data-en-placeholder="Your name"    placeholder="Votre nom"     required>
+          <input type="email" data-fr-placeholder="Votre email"   data-en-placeholder="Your email"   placeholder="Votre email"   required>
+          <input type="text"  data-fr-placeholder="Sujet"         data-en-placeholder="Subject"      placeholder="Sujet">
+          <textarea           data-fr-placeholder="Votre message..." data-en-placeholder="Your message..." placeholder="Votre message..." required></textarea>
+          <button class="btn btn-primary" type="submit">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span data-fr="Envoyer" data-en="Send">Envoyer</span>
+          </button>
+          <p class="form-note" id="successMessage" style="display:none;color:var(--green);font-weight:900;"
+             data-fr="Message envoyé avec succès !" data-en="Message sent successfully!">
+            Message envoyé avec succès !
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <strong style="color:var(--white)">Abderrahim Aggoun</strong>
+        <div data-fr="© 2026 — Portfolio personnel" data-en="© 2026 — Personal portfolio">© 2026 — Portfolio personnel</div>
+      </div>
+      <div class="socials">
+        <a href="mailto:agg.abderrahim@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/abderrahim-aggoun" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/abderrahim-aggoun" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
