@@ -2199,3 +2199,37 @@ footer {
 
 @media (max-width: 980px) { .project-yt { max-height: 320px; } }
 @media (max-width: 640px) { .project-yt { max-height: 220px; } }
+
+/* ============================================================
+   SERVICES — Clickable items + PDF download buttons
+   ============================================================ */
+
+/* Each service item is clickable → cursor feedback */
+.services-list li {
+  cursor: pointer;
+}
+
+/* Hovered item text turns gold as a clear "click me" signal */
+.services-list li:hover span {
+  color: var(--gold);
+  transition: color .22s ease;
+}
+
+/* PDF download buttons row */
+.services-pdf-btns {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 42px;
+}
+
+@media (max-width: 640px) {
+  .services-pdf-btns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .services-pdf-btns .btn {
+    justify-content: center;
+  }
+}

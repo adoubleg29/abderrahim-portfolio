@@ -110,3 +110,21 @@ window.addEventListener("load", () => {
     });
 
     applyLang(localStorage.getItem(LANG_KEY) || "fr");
+
+    /* ============================================================
+       SERVICES — click any item → scroll to contact + pre-fill
+    ============================================================ */
+    document.querySelectorAll(".services-list li").forEach(li => {
+      li.addEventListener("click", () => {
+        const lang   = localStorage.getItem(LANG_KEY) || "fr";
+        const span   = li.querySelector("span");
+        const name   = span
+          ? (span.getAttribute("data-" + lang) || span.textContent.trim())
+          : li.textContent.trim();
+        const prefix = lang === "fr" ? "Demande de service : " : "Service request: ";
+        const topic  = document.querySelector('input[name="topic"]');
+        if (topic) topic.value = prefix + name;
+        document.querySelector("#contact").scrollIntoView({ behavior: "smooth", block: "start" });
+        setTimeout(() => { if (topic) topic.focus(); }, 700);
+      });
+    });
