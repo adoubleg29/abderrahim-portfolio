@@ -986,11 +986,14 @@
       </div>
 
       <div class="rich-card glass reveal">
-        <form onsubmit="sendMessage(event)">
-          <input type="text"  data-fr-placeholder="Votre nom"     data-en-placeholder="Your name"    placeholder="Votre nom"     required>
-          <input type="email" data-fr-placeholder="Votre email"   data-en-placeholder="Your email"   placeholder="Votre email"   required>
-          <input type="text"  data-fr-placeholder="Sujet"         data-en-placeholder="Subject"      placeholder="Sujet">
-          <textarea           data-fr-placeholder="Votre message..." data-en-placeholder="Your message..." placeholder="Votre message..." required></textarea>
+        <form action="https://api.web3forms.com/submit" method="POST" onsubmit="sendMessage(event)">
+          <input type="hidden" name="access_key" value="1909c154-1840-4963-a90e-b69373913596">
+          <input type="hidden" name="subject"    value="Nouveau message — aggoun.net">
+          <input type="hidden" name="redirect"   value="false">
+          <input type="text"  name="name"    data-fr-placeholder="Votre nom"     data-en-placeholder="Your name"    placeholder="Votre nom"     required>
+          <input type="email" name="email"   data-fr-placeholder="Votre email"   data-en-placeholder="Your email"   placeholder="Votre email"   required>
+          <input type="text"  name="topic"   data-fr-placeholder="Sujet"         data-en-placeholder="Subject"      placeholder="Sujet">
+          <textarea           name="message" data-fr-placeholder="Votre message..." data-en-placeholder="Your message..." placeholder="Votre message..." required></textarea>
           <button class="btn btn-primary" type="submit">
             <i class="fa-solid fa-paper-plane"></i>
             <span data-fr="Envoyer" data-en="Send">Envoyer</span>

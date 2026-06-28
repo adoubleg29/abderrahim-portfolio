@@ -34,13 +34,44 @@ window.addEventListener("load", () => {
       });
     });
 
-    function sendMessage(event) {
+    async function sendMessage(event) {
       event.preventDefault();
-      const msg = document.getElementById("successMessage");
+      const form = event.target;
+      const btn  = form.querySelector("button[type='submit']");
+      const msg  = document.getElementById("successMessage");
       const lang = localStorage.getItem("portfolio_lang") || "fr";
-      msg.textContent = msg.getAttribute("data-" + lang);
-      msg.style.display = "block";
-      event.target.reset();
+
+      btn.disabled  = true;
+      btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
+
+      try {
+        const res  = await fetch("https://api.web3forms.com/submit", {
+          method : "POST",
+          body   : new FormData(form)
+        });
+        const json = await res.json();
+
+        if (json.success) {
+          msg.style.color   = "var(--green)";
+          msg.textContent   = lang === "fr"
+            ? "Message envoyé avec succès ✅"
+            : "Message sent successfully ✅";
+          msg.style.display = "block";
+          form.reset();
+        } else {
+          throw new Error(json.message);
+        }
+      } catch {
+        msg.style.color   = "#ff6b6b";
+        msg.textContent   = lang === "fr"
+          ? "Une erreur est survenue, veuillez réessayer ❌"
+          : "An error occurred, please try again ❌";
+        msg.style.display = "block";
+      } finally {
+        btn.disabled  = false;
+        btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> <span data-fr="Envoyer" data-en="Send">'
+          + (lang === "fr" ? "Envoyer" : "Send") + '</span>';
+      }
     }
 
     /* ============================================================
