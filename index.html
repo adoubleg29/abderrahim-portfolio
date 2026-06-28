@@ -571,8 +571,11 @@
     <div class="project-grid">
 
       <article class="project-card project-card--featured glass reveal">
-        <div class="media-box media-box--video">
-          <video class="project-video" src="assets/videos/VID_20230622_093459_406.mp4" controls preload="metadata" playsinline></video>
+        <div class="media-box media-box--video media-box--yt-pending">
+          <div class="yt-pending-placeholder">
+            <i class="fa-brands fa-youtube"></i>
+            <p data-fr="Vidéo démo disponible bientôt" data-en="Demo video coming soon">Vidéo démo disponible bientôt</p>
+          </div>
         </div>
         <div class="project-body">
           <div class="project-badges">
@@ -856,9 +859,16 @@
     <div class="gallery-grid">
 
       <div class="gallery-item big glass reveal gallery-item--video">
-        <video class="gallery-video" src="assets/videos/InShot_20230706_123643148.mp4" controls preload="metadata" playsinline></video>
+        <div class="gallery-yt-wrap">
+          <iframe class="gallery-yt"
+                  src="https://www.youtube.com/embed/CVj7cL6u1bw"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  loading="lazy"></iframe>
+        </div>
         <div class="gallery-video-caption">
-          <i class="fa-solid fa-award"></i>
+          <i class="fa-brands fa-youtube"></i>
           <span data-fr="Cérémonie officielle — Distinctions ADADI · Wilaya de Guelma, 2023"
                 data-en="Official ceremony — ADADI Awards · Wilaya of Guelma, 2023">Cérémonie officielle — Distinctions ADADI · Wilaya de Guelma, 2023</span>
         </div>
