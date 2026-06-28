@@ -38,8 +38,25 @@
         <span class="lang-sep">|</span>
         <span class="lang-opt" id="langEN">EN</span>
       </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
+
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true">
+    <div class="mobile-overlay-inner">
+      <ul class="mobile-nav-list">
+        <li><a href="#about"        data-fr="Profil"       data-en="Profile">Profil</a></li>
+        <li><a href="#education"    data-fr="Formation"    data-en="Education">Formation</a></li>
+        <li><a href="#achievements" data-fr="Réalisations" data-en="Achievements">Réalisations</a></li>
+        <li><a href="#projects"     data-fr="Projets"      data-en="Projects">Projets</a></li>
+        <li><a href="#services"     data-fr="Services"     data-en="Services">Services</a></li>
+        <li><a href="#media"        data-fr="Médias"       data-en="Media">Médias</a></li>
+        <li><a href="#contact"      data-fr="Contact"      data-en="Contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 
   <!-- Hero -->
   <header class="hero container" id="home">

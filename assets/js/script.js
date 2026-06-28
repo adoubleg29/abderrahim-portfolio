@@ -112,6 +112,54 @@ window.addEventListener("load", () => {
     applyLang(localStorage.getItem(LANG_KEY) || "fr");
 
     /* ============================================================
+       HAMBURGER MENU
+    ============================================================ */
+    (function () {
+      const btn     = document.getElementById("hamburger");
+      const overlay = document.getElementById("mobileOverlay");
+      if (!btn || !overlay) return;
+
+      function openMenu() {
+        overlay.classList.add("show");
+        requestAnimationFrame(() => overlay.classList.add("visible"));
+        btn.classList.add("open");
+        btn.setAttribute("aria-expanded", "true");
+        overlay.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeMenu() {
+        overlay.classList.remove("visible");
+        btn.classList.remove("open");
+        btn.setAttribute("aria-expanded", "false");
+        overlay.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+        overlay.addEventListener("transitionend", () => {
+          overlay.classList.remove("show");
+        }, { once: true });
+      }
+
+      btn.addEventListener("click", () => {
+        btn.classList.contains("open") ? closeMenu() : openMenu();
+      });
+
+      /* Close on nav link click */
+      overlay.querySelectorAll("a").forEach(a =>
+        a.addEventListener("click", closeMenu)
+      );
+
+      /* Close on Escape key */
+      document.addEventListener("keydown", e => {
+        if (e.key === "Escape" && btn.classList.contains("open")) closeMenu();
+      });
+
+      /* Close when resizing to desktop width */
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 768 && btn.classList.contains("open")) closeMenu();
+      });
+    })();
+
+    /* ============================================================
        SERVICES — click any item → scroll to contact + pre-fill
     ============================================================ */
     document.querySelectorAll(".services-list li").forEach(li => {
