@@ -45,9 +45,11 @@ window.addEventListener("load", () => {
       btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
 
       try {
-        const res  = await fetch("https://api.web3forms.com/submit", {
-          method : "POST",
-          body   : new FormData(form)
+        const payload = Object.fromEntries(new FormData(form));
+        const res     = await fetch("https://api.web3forms.com/submit", {
+          method  : "POST",
+          headers : { "Content-Type": "application/json", "Accept": "application/json" },
+          body    : JSON.stringify(payload)
         });
         const json = await res.json();
 
@@ -59,14 +61,15 @@ window.addEventListener("load", () => {
           msg.style.display = "block";
           form.reset();
         } else {
-          throw new Error(json.message);
+          throw new Error(json.message || "Web3Forms error");
         }
-      } catch {
+      } catch (err) {
         msg.style.color   = "#ff6b6b";
         msg.textContent   = lang === "fr"
           ? "Une erreur est survenue, veuillez réessayer ❌"
           : "An error occurred, please try again ❌";
         msg.style.display = "block";
+        console.error("Web3Forms:", err);
       } finally {
         btn.disabled  = false;
         btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> <span data-fr="Envoyer" data-en="Send">'
